@@ -1,0 +1,15 @@
+body {
+	display: block;
+	border: 1px dotted #220afa;
+	margin: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+
+	background-color: #5bd3b5;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+}
+
+img {
+	width: 1300px;
+}
