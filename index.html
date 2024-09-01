@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="theme-color" content="#000000" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>12_shoji_hishinuma/FND29 最終プレゼン</title>
+	</head>
+	<body>
+		<h2>12_shoji_hishinuma/FND29 最終プレゼン</h2>
+		<h3>今回の講座で習ったこと</h3>
+		<img class="DIG" src="./image/基礎講座で習ったこと.jpg" />
+		<h3>出来ること</h3>
+		<ul>
+			<li>ブラウザからデータの取得が可能(.html ⇒.jsファイル)</li>
+			<li>データを加工してブラウザに表示も可能(.html⇒.jsファイル)</li>
+			<li>ブラウザ(Chrome等)さえあればこれらのファイルで実行可能(特殊なソフト不要)</li>
+		</ul>
+		<br /><br />
+
+		<button onclick="readJACET8000()">JACET8000.jsonファイルの読み込み</button>
+		<br /><br />
+
+		<button onclick="ocrImageProcess()">テキスト抽出したい画像ファイルを選択</button>
+		<br /><br />
+
+		<button onclick="processConvertedText()">出現回数と難易度表示</button>
+		<br /><br />
+
+		<button onclick="saveCSVFile()">CSVファイルとして保存</button>
+
+		<div id="textDisplayArea"></div>
+
+		<script type="text/javascript" src="./js/readJACET8000.js"></script>
+		<script type="text/javascript" src="./js/ocrImageProcess.js"></script>
+		<script type="text/javascript" src="./js/processConvertedText.js"></script>
+		<script type="text/javascript" src="./js/saveCSVFile.js"></script>
+		<script type="text/javascript" src="./js/tesseract.min.js"></script>
+	</body>
+</html>
